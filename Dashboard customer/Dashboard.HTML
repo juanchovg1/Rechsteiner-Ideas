@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Customer</title>
+    <link rel="stylesheet" href="dashboard-customer.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Dashboard Customer</h1>
+            <div class="profile">
+                <span>Welcome, Admin</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="overview">
+                <h2>Overview</h2>
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>Total Services</h3>
+                        <p>150</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pending Services</h3>
+                        <p>20</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Completed Services</h3>
+                        <p>130</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="actions">
+                <h2>Actions</h2>
+                <button class="btn">View Scheduled Services</button>
+                <button class="btn">Add New Service</button>
+                <button class="btn">Generate Reports</button>
+            </section>
+
+            <section class="scheduled-services">
+                <h2>Scheduled Services</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service ID</th>
+                            <th>Customer Name</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>John Doe</td>
+                            <td>2025-01-10</td>
+                            <td>Pending</td>
+                            <td><button class="btn small-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Jane Smith</td>
+                            <td>2025-01-12</td>
+                            <td>Completed</td>
+                            <td><button class="btn small-btn">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

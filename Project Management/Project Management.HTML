@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="project-management.css">
+</head>
+<body>
+    <div class="project-management-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Project Management</h1>
+            <div class="profile">
+                <span>Welcome, Admin</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Project Actions -->
+            <section class="actions">
+                <h2>Actions</h2>
+                <button class="btn">Add New Project</button>
+                <button class="btn">View All Projects</button>
+                <button class="btn">Generate Report</button>
+            </section>
+
+            <!-- Project List -->
+            <section class="project-list">
+                <h2>Current Projects</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project ID</th>
+                            <th>Project Name</th>
+                            <th>Coordinator</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>New Office Construction</td>
+                            <td>John Doe</td>
+                            <td>In Progress</td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Warehouse Renovation</td>
+                            <td>Jane Smith</td>
+                            <td>Completed</td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="documentation.css">
+</head>
+<body>
+    <div class="documentation-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Documentation</h1>
+            <div class="profile">
+                <span>Welcome, Admin</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <h2>Upload New Document</h2>
+                <form action="#" method="post" enctype="multipart/form-data" class="upload-form">
+                    <label for="document-title">Document Title:</label>
+                    <input type="text" id="document-title" name="document-title" placeholder="Enter title" required>
+
+                    <label for="file-upload">Choose File:</label>
+                    <input type="file" id="file-upload" name="file-upload" required>
+
+                    <button type="submit" class="btn">Upload Document</button>
+                </form>
+            </section>
+
+            <!-- Document List -->
+            <section class="document-list">
+                <h2>Manage Documents</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Uploaded By</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Project Plan</td>
+                            <td>Admin</td>
+                            <td>2025-01-05</td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Site Layout</td>
+                            <td>John Doe</td>
+                            <td>2025-01-03</td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

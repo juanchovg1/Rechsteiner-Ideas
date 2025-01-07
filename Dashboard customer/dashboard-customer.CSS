@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #131514;
+    color: #dbc9a5;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9f8556;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #131514;
+}
+
+.header h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.header .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .logout-btn {
+    background-color: #dbc9a5;
+    color: #131514;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.header .logout-btn:hover {
+    background-color: #9f8556;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Overview Section */
+.overview h2, .actions h2, .scheduled-services h2 {
+    font-size: 1.5em;
+    color: #9f8556;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.stat-card {
+    background-color: #131514;
+    border: 2px solid #9f8556;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    color: #dbc9a5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.stat-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Actions Section */
+.actions .btn {
+    background-color: #9f8556;
+    color: #131514;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.actions .btn:hover {
+    background-color: #dbc9a5;
+    transform: scale(1.05);
+}
+
+/* Scheduled Services Table */
+.scheduled-services table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #131514;
+    color: #dbc9a5;
+}
+
+.scheduled-services th, .scheduled-services td {
+    border: 1px solid #9f8556;
+    padding: 10px;
+    text-align: center;
+}
+
+.scheduled-services th {
+    background-color: #9f8556;
+    color: #131514;
+    font-weight: bold;
+}
+
+.scheduled-services td {
+    font-size: 0.9em;
+}
+
+.scheduled-services .small-btn {
+    background-color: #9f8556;
+    color: #131514;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scheduled-services .small-btn:hover {
+    background-color: #dbc9a5;
+}
