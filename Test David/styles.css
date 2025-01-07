@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #131514; /* Fondo principal negro */
+    color: #dbc9a5; /* Texto en dorado claro */
+}
+
+/* Admin Container */
+.admin-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #131514; /* Fondo negro */
+    color: #dbc9a5; /* Texto en dorado claro */
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #9f8556; /* Dorado oscuro */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #dbc9a5; /* Dorado claro */
+    font-size: 1em;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #9f8556; /* Fondo dorado oscuro */
+    color: #131514; /* Texto negro */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #131514; /* Fondo negro */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #131514; /* Fondo negro */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: #dbc9a5; /* Texto dorado claro */
+}
+
+.header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.header .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .logout-btn {
+    background-color: #9f8556; /* Botón dorado oscuro */
+    color: #131514; /* Texto negro */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header .logout-btn:hover {
+    background-color: #dbc9a5; /* Botón dorado claro */
+    color: #131514; /* Texto negro */
+}
+
+/* Sections */
+.section {
+    background-color: #131514; /* Fondo negro */
+    padding: 20px;
+    border: 1px solid #9f8556; /* Borde dorado oscuro */
+    border-radius: 8px;
+    color: #dbc9a5; /* Texto dorado claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.section h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #9f8556; /* Títulos dorados oscuros */
+}
+
+.section .btn {
+    background-color: #9f8556; /* Fondo dorado oscuro */
+    color: #131514; /* Texto negro */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.section .btn:hover {
+    background-color: #dbc9a5; /* Fondo dorado claro */
+    color: #131514; /* Texto negro */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}

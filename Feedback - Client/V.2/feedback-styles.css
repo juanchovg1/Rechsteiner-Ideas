@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .feedback-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Section */
+  .feedback-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #4A4A4A;
+  }
+  
+  .feedback-header p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #777;
+  }
+  
+  /* Feedback Options */
+  .feedback-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .feedback-card {
+    padding: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    color: #333;
+  }
+  
+  .feedback-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 0 0 15px;
+  }
+  
+  .feedback-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer */
+  .feedback-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+  }
+  

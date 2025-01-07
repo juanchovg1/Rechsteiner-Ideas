@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Module - Drive Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Project Documents</h1>
+            <p>Select a project, create folders, and manage documents related to your home.</p>
+            
+            <!-- Project Selection -->
+            <section class="project-selection">
+                <select id="projectSelect" class="dropdown">
+                    <option value="" disabled selected>Select a Project</option>
+                    <option value="project1">Project 1</option>
+                    <option value="project2">Project 2</option>
+                    <option value="project3">Project 3</option>
+                </select>
+            </section>
+
+            <div class="actions">
+                <button id="newFolderBtn" class="action-button">+ New Folder</button>
+                <button id="editFolderBtn" class="action-button">Edit Folder</button>
+            </div>
+        </header>
+
+        <!-- Folder Grid (Drive-style) -->
+        <section class="folder-grid" id="folderGrid">
+            <div class="folder" onclick="openFolder('Designs')">
+                <div class="folder-icon">&#128193;</div>
+                <span class="folder-name">Designs</span>
+            </div>
+            <div class="folder" onclick="openFolder('Specifications')">
+                <div class="folder-icon">&#128193;</div>
+                <span class="folder-name">Specifications</span>
+            </div>
+            <div class="folder" onclick="openFolder('Licenses')">
+                <div class="folder-icon">&#128193;</div>
+                <span class="folder-name">Licenses</span>
+            </div>
+            <div class="folder" onclick="openFolder('Usage Instructions')">
+                <div class="folder-icon">&#128193;</div>
+                <span class="folder-name">Usage Instructions</span>
+            </div>
+        </section>
+
+        <!-- Document List inside Folder (hidden by default) -->
+        <section class="document-display hidden" id="documentDisplay">
+            <button class="back-button" onclick="closeFolder()">&#8592; Back to Folders</button>
+            <h2 id="currentFolderName">Documents</h2>
+            <div class="document-grid">
+                <div class="document pdf">
+                    <span class="extension">PDF</span>
+                    <span class="document-name">Document 1.pdf</span>
+                </div>
+                <div class="document word">
+                    <span class="extension">DOCX</span>
+                    <span class="document-name">Document 2.docx</span>
+                </div>
+                <div class="document excel">
+                    <span class="extension">XLSX</span>
+                    <span class="document-name">Document 3.xlsx</span>
+                </div>
+                <div class="document pdf">
+                    <span class="extension">PDF</span>
+                    <span class="document-name">Document 4.pdf</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

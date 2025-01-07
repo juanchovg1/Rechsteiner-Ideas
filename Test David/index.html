@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin View</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <nav>
+                <ul>
+                    <li><a href="#clients">Client Management</a></li>
+                    <li><a href="#site-team">Site Team</a></li>
+                    <li><a href="#project-coordinator">Project Coordinator</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h1>Welcome, Admin</h1>
+                <div class="profile">
+                    <span>Admin Name</span>
+                    <button class="logout-btn">Logout</button>
+                </div>
+            </header>
+
+            <!-- Sections -->
+            <section id="clients" class="section">
+                <h2>Client Management</h2>
+                <button class="btn">Add Client</button>
+                <button class="btn">View All Clients</button>
+                <button class="btn">Export Data</button>
+            </section>
+
+            <section id="site-team" class="section">
+                <h2>Site Team</h2>
+                <button class="btn">Add Team Member</button>
+                <button class="btn">View Team</button>
+                <button class="btn">Assign Roles</button>
+            </section>
+
+            <section id="project-coordinator" class="section">
+                <h2>Project Coordinator</h2>
+                <button class="btn">Add Coordinator</button>
+                <button class="btn">View Coordinators</button>
+                <button class="btn">Generate Reports</button>
+            </section>
+
+            <section id="settings" class="section">
+                <h2>Settings</h2>
+                <button class="btn">System Preferences</button>
+                <button class="btn">Manage Permissions</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

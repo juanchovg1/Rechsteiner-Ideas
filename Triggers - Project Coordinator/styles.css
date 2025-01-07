@@ -1,0 +1,89 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header p {
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Main Button Section */
+.main-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button button:hover {
+    background-color: #0056b3;
+}
+
+.status {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999;
+}
+
+/* Activity Log Section */
+.activity-log {
+    margin-top: 20px;
+}
+
+.activity-log h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.activity-log ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activity-log li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}

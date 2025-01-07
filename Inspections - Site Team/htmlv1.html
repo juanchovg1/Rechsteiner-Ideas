@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspection Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .inspection-card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: relative;
+        }
+
+        .inspection-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 10px;
+        }
+
+        .inspection-header h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .inspection-tag {
+            background: #007BFF;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+
+        .inspection-tag.specialty {
+            background: #28A745; /* Green for Specialty */
+        }
+
+        .inspection-body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .inspection-section {
+            flex: 1;
+        }
+
+        .inspection-section h4 {
+            margin-bottom: 5px;
+            font-size: 1em;
+            color: #555;
+            text-decoration: underline;
+        }
+
+        .inspection-section p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .inspection-number {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #007BFF;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .inspection-body {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Major Inspection -->
+        <div class="inspection-card">
+            <div class="inspection-number">1</div>
+            <div class="inspection-header">
+                <h3>Forms</h3>
+                <span class="inspection-tag">Major Inspection</span>
+            </div>
+            <div class="inspection-body">
+                <div class="inspection-section">
+                    <h4>Required Documents</h4>
+                    <p>Permit documents, site plans indicating formwork layout, engineering or architectural drawings for the foundation.</p>
+                </div>
+                <div class="inspection-section">
+                    <h4>Common Reasons for Failures</h4>
+                    <p>Inaccurate formwork installation, incorrect dimensions, or insufficient structural support.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Major Inspection -->
+        <div class="inspection-card">
+            <div class="inspection-number">2</div>
+            <div class="inspection-header">
+                <h3>Slab Heating</h3>
+                <span class="inspection-tag">Major Inspection</span>
+            </div>
+            <div class="inspection-body">
+                <div class="inspection-section">
+                    <h4>Required Documents</h4>
+                    <p>Hydronic heating system plans, manufacturer specifications, and compliance certifications.</p>
+                </div>
+                <div class="inspection-section">
+                    <h4>Common Reasons for Failures</h4>
+                    <p>Incorrect placement of heating elements, insufficient insulation, or unsecured connections.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specialty Inspection -->
+        <div class="inspection-card">
+            <div class="inspection-number">14</div>
+            <div class="inspection-header">
+                <h3>Pool Inspection</h3>
+                <span class="inspection-tag specialty">Specialty Inspection</span>
+            </div>
+            <div class="inspection-body">
+                <div class="inspection-section">
+                    <h4>Required Documents</h4>
+                    <p>Site pool plans, safety barrier layouts, manufacturer specifications for pool equipment, and water quality test reports.</p>
+                </div>
+                <div class="inspection-section">
+                    <h4>Common Reasons for Failures</h4>
+                    <p>Improper safety barriers, non-compliance with drainage requirements, or faulty pool equipment installation.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

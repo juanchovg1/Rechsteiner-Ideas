@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="support-container">
+    <!-- Header Section -->
+    <header class="support-header">
+      <h1>Support Center</h1>
+      <p>Welcome! Start a conversation with our chatbot or submit a detailed request for assistance.</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="support-content">
+      <!-- Chatbot Section -->
+      <section id="chatbot-area" class="chatbot-area">
+        <h2>Chat with Us</h2>
+        <div class="chatbot-window">
+          <p>Hi! How can I help you today?</p>
+          <!-- Chatbot interface can be embedded here -->
+        </div>
+        <button id="show-form-btn" class="switch-btn">Submit a Request</button>
+      </section>
+
+      <!-- Form Section (Initially Hidden) -->
+      <section id="form-area" class="form-area hidden">
+        <h2>Submit a Request</h2>
+        <form id="support-form">
+          <!-- Problem Description -->
+          <label for="issue-description">Describe your issue:</label>
+          <textarea id="issue-description" name="issue-description" placeholder="Provide as many details as possible..." required></textarea>
+
+          <!-- Priority Selection -->
+          <label for="issue-priority">Priority:</label>
+          <select id="issue-priority" name="issue-priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </form>
+        <button id="show-chatbot-btn" class="switch-btn">Back to Chatbot</button>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="support-footer">
+      <p>© 2024 Support Center | Rechsteiner Signature Homes</p>
+    </footer>
+  </div>
+
+  <script>
+    // Handle visibility switching
+    const chatbotArea = document.getElementById('chatbot-area');
+    const formArea = document.getElementById('form-area');
+    const showFormBtn = document.getElementById('show-form-btn');
+    const showChatbotBtn = document.getElementById('show-chatbot-btn');
+
+    showFormBtn.addEventListener('click', () => {
+      chatbotArea.classList.add('hidden');
+      formArea.classList.remove('hidden');
+    });
+
+    showChatbotBtn.addEventListener('click', () => {
+      formArea.classList.add('hidden');
+      chatbotArea.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

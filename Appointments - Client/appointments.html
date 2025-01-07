@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="appointments.css">
+</head>
+<body>
+
+<div class="appointments-container">
+    <!-- Section: Appointment Summary -->
+    <div class="appointment-summary">
+        <h2 class="section-title">Appointment Summary</h2>
+        <div class="appointment-card">
+            <h4>Service: HVAC Maintenance</h4>
+            <div class="appointment-details">
+                <p><strong>Contractor:</strong> Elite Home Services</p>
+                <p><strong>Technician:</strong> John Doe</p>
+                <p><strong>Date:</strong> Nov 3, 2024</p>
+                <p><strong>Time:</strong> 10:00 AM</p>
+            </div>
+        </div>
+        <!-- Add more .appointment-card as needed for multiple appointments -->
+    </div>
+
+    <!-- Section: Appointment Confirmation -->
+    <div class="appointment-confirmation">
+        <h2 class="section-title">Appointment Confirmation</h2>
+        <p>Please confirm or reject your upcoming appointment:</p>
+        <button class="btn btn-confirm" onclick="confirmAppointment()">Confirm</button>
+        <button class="btn btn-reject" onclick="showResponseForm()">Reject</button>
+
+        <!-- Response Form (shows only if 'Reject' is clicked) -->
+        <div class="response-form" id="responseForm">
+            <label for="availability">Please provide your available time slots:</label>
+            <textarea id="availability" rows="3" placeholder="E.g., Nov 4, 2024, from 2 PM to 4 PM"></textarea>
+            <button class="btn btn-confirm" style="margin-top: 10px;">Submit Availability</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showResponseForm() {
+        document.getElementById("responseForm").style.display = "block";
+    }
+    function confirmAppointment() {
+        alert("Appointment confirmed!");
+        // Here you can add additional code for backend confirmation logic
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Assignment</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Animation library for Lottie -->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+<body>
+    <div class="empty-project-container">
+        <!-- Short Explanation Text -->
+        <p class="empty-project-text">
+            It looks like you don’t have any projects assigned yet. Please provide some details about your project so our team can assign it to you.
+        </p>
+        
+        <!-- Project Details Input -->
+        <div class="project-details-input">
+            <label for="projectDetails">Project Details</label>
+            <textarea id="projectDetails" placeholder="Describe your project details here..."></textarea>
+        </div>
+        
+        <!-- Button to Send Details -->
+        <button class="send-project-details-btn">Send Project Details</button>
+        
+        <!-- Animation -->
+        <div class="animation-container">
+            <dotlottie-player 
+                src="https://lottie.host/a548ee19-5a7d-4db2-ab5e-e2dfa9a2230f/bGbXIyXTS2.json" 
+                background="transparent" 
+                speed="1" 
+                style="width: 300px; height: 300px;" 
+                loop 
+                autoplay>
+            </dotlottie-player>
+        </div>
+    </div>
+</body>
+</html>

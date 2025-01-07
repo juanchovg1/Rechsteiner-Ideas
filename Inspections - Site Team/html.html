@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspection Types</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .inspection-card {
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .inspection-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .inspection-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+
+        .inspection-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #9f8556;
+        }
+
+        .inspection-number {
+            background-color: #9f8556;
+            color: #fff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+        .inspection-body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .inspection-section {
+            flex: 1 1 45%;
+            margin-top: 10px;
+        }
+
+        .inspection-section h3 {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .inspection-section p {
+            font-size: 0.9em;
+            color: #777;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 768px) {
+            .inspection-body {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Major Inspection Types</h1>
+
+        <!-- Inspection Card Example -->
+        <div class="inspection-card">
+            <div class="inspection-header">
+                <div class="inspection-title">Forms</div>
+                <div class="inspection-number">1</div>
+            </div>
+            <div class="inspection-body">
+                <div class="inspection-section">
+                    <h3>Required Documents</h3>
+                    <p>Permit documents (approved building permit), Site plans indicating formwork layout, Engineering or architectural drawings for foundation.</p>
+                </div>
+                <div class="inspection-section">
+                    <h3>Common Reasons for Inspection Failures</h3>
+                    <p>Inaccurate or incomplete formwork installation, Incorrect dimensions or alignment, Insufficient structural support or bracing.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more cards dynamically in Bubble -->
+        <div class="inspection-card">
+            <div class="inspection-header">
+                <div class="inspection-title">Slab Poly (Where Required)</div>
+                <div class="inspection-number">2</div>
+            </div>
+            <div class="inspection-body">
+                <div class="inspection-section">
+                    <h3>Required Documents</h3>
+                    <p>Building permit, Slab detail drawings showing vapor barrier placement, Material specifications for vapor barrier.</p>
+                </div>
+                <div class="inspection-section">
+                    <h3>Common Reasons for Inspection Failures</h3>
+                    <p>Improper installation or torn vapor barrier, Overlapping seams not properly sealed, Missing vapor barrier in required areas.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Continue for other inspection types -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Updates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>News and Updates</h1>
+            <p>Stay updated with our latest company news, project announcements, and exclusive discounts.</p>
+        </header>
+
+        <!-- News Grid (repeating group) -->
+        <div class="news-grid" id="newsGrid">
+            <div class="news-card" onclick="loadArticle('article1')">
+                <div class="news-image">
+                    <img src="images/remodeling-tips.jpg" alt="Remodeling Tips">
+                </div>
+                <div class="news-content">
+                    <h2 class="news-title">Top Remodeling Tips for 2024</h2>
+                    <p class="news-summary">Discover the best ways to enhance your living space with our top remodeling tips...</p>
+                </div>
+            </div>
+
+            <div class="news-card" onclick="loadArticle('article2')">
+                <div class="news-image">
+                    <img src="images/kitchen-remodel.jpg" alt="Kitchen Remodel">
+                </div>
+                <div class="news-content">
+                    <h2 class="news-title">Modern Kitchen Remodel Ideas</h2>
+                    <p class="news-summary">Explore creative kitchen remodeling ideas that blend functionality with style...</p>
+                </div>
+            </div>
+
+            <div class="news-card" onclick="loadArticle('article3')">
+                <div class="news-image">
+                    <img src="images/bathroom-upgrade.jpg" alt="Bathroom Upgrade">
+                </div>
+                <div class="news-content">
+                    <h2 class="news-title">Bathroom Upgrades That Add Value</h2>
+                    <p class="news-summary">Learn how bathroom upgrades can significantly increase your home's value...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article content section -->
+        <div class="article-detail" id="articleDetail">
+            <!-- Back button -->
+            <button class="back-button" onclick="goBack()">
+                &larr; Back to News
+            </button>
+
+            <!-- This will be dynamically filled with article content -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
