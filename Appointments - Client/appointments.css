@@ -7,50 +7,55 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: #131514; /* Fondo negro */
     margin: 0;
     padding: 20px;
+    color: #dbc9a5; /* Texto dorado claro */
 }
 
 .appointments-container {
     width: 100%;
     max-width: 800px;
-    background-color: #fff;
+    background-color: #131514; /* Fondo negro */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #9f8556; /* Borde dorado oscuro */
 }
 
 .section-title {
     font-size: 24px;
-    color: #333;
+    color: #dbc9a5; /* Texto dorado claro */
     margin-bottom: 15px;
 }
 
 .appointment-summary, .appointment-confirmation {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #9f8556; /* Borde dorado oscuro */
     border-radius: 8px;
+    background-color: #131514; /* Fondo negro */
+    color: #dbc9a5; /* Texto dorado claro */
 }
 
 .appointment-card {
     padding: 15px;
-    border: 1px solid #d3d3d3;
+    border: 1px solid #9f8556; /* Borde dorado oscuro */
     border-radius: 8px;
     margin-bottom: 15px;
-    background-color: #f9f9f9;
+    background-color: #131514; /* Fondo negro */
+    color: #dbc9a5; /* Texto dorado claro */
 }
 
 .appointment-card h4 {
     margin: 0;
     font-size: 18px;
-    color: #333;
+    color: #9f8556; /* Texto dorado oscuro */
 }
 
 .appointment-details p {
     margin: 5px 0;
-    color: #666;
+    color: #dbc9a5; /* Texto dorado claro */
     font-size: 14px;
 }
 
@@ -61,16 +66,27 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn-confirm {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #9f8556; /* Fondo dorado oscuro */
+    color: #131514; /* Texto negro */
+}
+
+.btn-confirm:hover {
+    background-color: #dbc9a5; /* Fondo dorado claro */
+    transform: scale(1.05);
 }
 
 .btn-reject {
-    background-color: #FF6347;
-    color: white;
+    background-color: #e74c3c; /* Rojo para rechazo */
+    color: #fff;
+}
+
+.btn-reject:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
 }
 
 .response-form {
@@ -80,13 +96,20 @@ body {
 
 .response-form label {
     font-size: 14px;
-    color: #666;
+    color: #dbc9a5; /* Texto dorado claro */
 }
 
 .response-form input, .response-form textarea {
     width: 100%;
     margin-top: 5px;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #9f8556; /* Borde dorado oscuro */
     border-radius: 4px;
+    background-color: #131514; /* Fondo negro */
+    color: #dbc9a5; /* Texto dorado claro */
+}
+
+.response-form input:focus, .response-form textarea:focus {
+    outline: none;
+    border-color: #dbc9a5; /* Borde dorado claro */
 }
