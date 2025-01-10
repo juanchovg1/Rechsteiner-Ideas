@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #131514; /* Fondo negro */
+    color: #dbc9a5; /* Texto dorado claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contractor-management-container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #131514; /* Fondo negro */
+    border: 1px solid #9f8556; /* Borde dorado oscuro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9f8556; /* Dorado oscuro */
+    color: #131514; /* Texto negro */
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.header .logout-btn {
+    background-color: #dbc9a5; /* Dorado claro */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.header .logout-btn:hover {
+    background-color: #9f8556;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Actions Section */
+.actions {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #9f8556;
+    background-color: #131514;
+}
+
+.actions h2 {
+    font-size: 1.5em;
+    color: #9f8556; /* Dorado oscuro */
+    margin-bottom: 15px;
+}
+
+.actions .btn {
+    background-color: #9f8556; /* Dorado oscuro */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.actions .btn:hover {
+    background-color: #dbc9a5; /* Dorado claro */
+    transform: scale(1.05);
+}
+
+/* Contractor List Section */
+.contractor-list {
+    background-color: #131514; /* Fondo negro */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #9f8556; /* Borde dorado oscuro */
+}
+
+.contractor-list h2 {
+    font-size: 1.5em;
+    color: #9f8556;
+    margin-bottom: 15px;
+}
+
+.contractor-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #dbc9a5;
+}
+
+.contractor-list th,
+.contractor-list td {
+    border: 1px solid #9f8556;
+    padding: 10px;
+    text-align: center;
+}
+
+.contractor-list th {
+    background-color: #9f8556; /* Dorado oscuro */
+    color: #131514; /* Texto negro */
+}
+
+.contractor-list .btn {
+    background-color: #9f8556; /* Dorado oscuro */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contractor-list .btn:hover {
+    background-color: #dbc9a5;
+}
+
+.contractor-list .delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.contractor-list .delete-btn:hover {
+    background-color: #c0392b;
+}

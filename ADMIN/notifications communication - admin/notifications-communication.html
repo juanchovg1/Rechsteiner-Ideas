@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications & Communication</title>
+    <link rel="stylesheet" href="notifications-communication.css">
+</head>
+<body>
+    <div class="notifications-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Notifications & Communication</h1>
+            <div class="profile">
+                <span>Welcome, Admin</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Actions Section -->
+            <section class="actions">
+                <h2>Actions</h2>
+                <button class="btn">Create New Notification</button>
+                <button class="btn">View All Notifications</button>
+            </section>
+
+            <!-- Notification List -->
+            <section class="notification-list">
+                <h2>Notification History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Message</th>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>System Maintenance Scheduled</td>
+                            <td>Critical</td>
+                            <td>2025-01-10</td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>New Feature Release</td>
+                            <td>Info</td>
+                            <td>2025-01-08</td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

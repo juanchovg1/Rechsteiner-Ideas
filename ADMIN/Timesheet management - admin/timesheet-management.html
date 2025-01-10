@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timesheet Management</title>
+    <link rel="stylesheet" href="timesheet-management.css">
+</head>
+<body>
+    <div class="timesheet-management-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Timesheet Management</h1>
+            <div class="profile">
+                <span>Welcome, Admin</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Actions Section -->
+            <section class="actions">
+                <h2>Actions</h2>
+                <button class="btn">Add New Timesheet</button>
+                <button class="btn">View All Timesheets</button>
+                <button class="btn">Generate Report</button>
+            </section>
+
+            <!-- Timesheet Table -->
+            <section class="timesheet-table">
+                <h2>Employee Timesheets</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Name</th>
+                            <th>Week Ending</th>
+                            <th>Total Hours</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EMP001</td>
+                            <td>John Doe</td>
+                            <td>2025-01-12</td>
+                            <td>40</td>
+                            <td><span class="status approved">Approved</span></td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EMP002</td>
+                            <td>Jane Smith</td>
+                            <td>2025-01-12</td>
+                            <td>38</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

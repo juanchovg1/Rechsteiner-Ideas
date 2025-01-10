@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Specs</title>
+    <link rel="stylesheet" href="construction-specs.css">
+</head>
+<body>
+    <div class="construction-specs-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Construction Specs</h1>
+            <div class="profile">
+                <span>Welcome, Admin</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Actions Section -->
+            <section class="actions">
+                <h2>Actions</h2>
+                <button class="btn">Add Specification</button>
+                <button class="btn">View All Specs</button>
+                <button class="btn">Export to PDF</button>
+            </section>
+
+            <!-- Specifications Table -->
+            <section class="specs-table">
+                <h2>Construction Specifications</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cost Code</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Foundation Work</td>
+                            <td>Structural</td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>202</td>
+                            <td>Electrical Wiring</td>
+                            <td>Electrical</td>
+                            <td>
+                                <button class="btn small-btn">Edit</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

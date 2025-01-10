@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #131514;
+    color: #dbc9a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.construction-specs-container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #131514;
+    border: 1px solid #9f8556;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9f8556;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #131514;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.header .logout-btn {
+    background-color: #dbc9a5;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.header .logout-btn:hover {
+    background-color: #9f8556;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Actions Section */
+.actions {
+    padding: 20px;
+    border: 1px solid #9f8556;
+    border-radius: 8px;
+    background-color: #131514;
+}
+
+.actions h2 {
+    font-size: 1.5em;
+    color: #9f8556;
+    margin-bottom: 15px;
+}
+
+.actions .btn {
+    background-color: #9f8556;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.actions .btn:hover {
+    background-color: #dbc9a5;
+    transform: scale(1.05);
+}
+
+/* Specs Table Section */
+.specs-table {
+    background-color: #131514;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #9f8556;
+}
+
+.specs-table h2 {
+    font-size: 1.5em;
+    color: #9f8556;
+    margin-bottom: 15px;
+}
+
+.specs-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #dbc9a5;
+}
+
+.specs-table th,
+.specs-table td {
+    border: 1px solid #9f8556;
+    padding: 10px;
+    text-align: center;
+}
+
+.specs-table th {
+    background-color: #9f8556;
+    color: #131514;
+}
+
+.specs-table .small-btn {
+    background-color: #9f8556;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.specs-table .small-btn:hover {
+    background-color: #dbc9a5;
+}
+
+.specs-table .delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.specs-table .delete-btn:hover {
+    background-color: #c0392b;
+}

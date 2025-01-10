@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated Maps</title>
+    <link rel="stylesheet" href="integrated-maps.css">
+</head>
+<body>
+    <div class="maps-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Integrated Maps</h1>
+            <div class="profile">
+                <span>Welcome, Admin</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Map Display -->
+            <section id="map-display">
+                <iframe id="map-frame" src="" frameborder="0"></iframe>
+            </section>
+
+            <!-- Filter Buttons -->
+            <section class="map-filters">
+                <button class="btn" onclick="loadMap('hospital')">Hospital Map</button>
+                <button class="btn" onclick="loadMap('suppliers')">Suppliers Map</button>
+                <button class="btn" onclick="loadMap('storage')">Storageart Map</button>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function loadMap(type) {
+            const mapFrame = document.getElementById('map-frame');
+            if (type === 'hospital') {
+                mapFrame.src = "https://www.google.com/maps/embed/v1/search?key=YOUR_API_KEY&q=hospitals+in+Vancouver,+Canada";
+            } else if (type === 'suppliers') {
+                mapFrame.src = "https://www.google.com/maps/embed/v1/search?key=YOUR_API_KEY&q=suppliers+in+Vancouver,+Canada";
+            } else if (type === 'storage') {
+                mapFrame.src = "https://www.google.com/maps/embed/v1/search?key=YOUR_API_KEY&q=storage+locations+in+Vancouver,+Canada";
+            }
+        }
+        // Load default map
+        loadMap('hospital');
+    </script>
+</body>
+</html>

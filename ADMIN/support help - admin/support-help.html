@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & Help</title>
+    <link rel="stylesheet" href="support-help.css">
+</head>
+<body>
+    <div class="support-help-container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Support & Help</h1>
+            <div class="profile">
+                <span>Welcome, Admin</span>
+                <button class="logout-btn">Logout</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Actions Section -->
+            <section class="actions">
+                <h2>Actions</h2>
+                <button class="btn">View Tutorials</button>
+                <button class="btn">Access User Manuals</button>
+                <button class="btn">Request Technical Support</button>
+            </section>
+
+            <!-- Support Requests -->
+            <section class="support-requests">
+                <h2>Support Requests</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>User</th>
+                            <th>Issue</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SR001</td>
+                            <td>John Doe</td>
+                            <td>Cannot access dashboard</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td>2025-01-12</td>
+                            <td>
+                                <button class="btn small-btn">Resolve</button>
+                                <button class="btn small-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SR002</td>
+                            <td>Jane Smith</td>
+                            <td>Bug in report generation</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                            <td>2025-01-10</td>
+                            <td>
+                                <button class="btn small-btn">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
